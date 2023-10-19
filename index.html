@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carbon.css - black and white CSS library</title>
+    <script src="./planifolia.min.js"></script>
+    <link rel="stylesheet" href="./api/v1/carbon.css" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="toggleTheme()">
+    <header class="d-flex flex-row mx align-items-center justify-between">
+      <a href="#">
+        <p class="logo-text">carbon.css</p>
+        <img src="./logo.png" alt="logo" class="logo-img">
+      </a>
+      <div class="d-flex flex-row">
+        <a href="/#/docs/v1" class="btn">Docs</a>
+        <button
+          onclick="document.body.classList.toggle('light'); toggleTheme()"
+          class="btn square"
+          id="toggleThemeButton"
+        ></button>
+        <a
+          href="https://github.com/mitybp/carbon.css"
+          target="_blank"
+          class="btn square active"
+          ><i class="ph-fill ph-github-logo"></i
+        ></a>
+      </div>
+    </header>
+    <main></main>
+    <script>
+      window.PlanifoliaSettings.container = document.querySelector("main");
+      window.PlanifoliaSettings.basePath = "/view/";
+      Planifolia.initializeAutoRouter();
+
+      const toggleThemeButton = document.getElementById("toggleThemeButton");
+      toggleTheme = () =>{
+        if (document.body.classList.contains("light")) {
+        toggleThemeButton.innerHTML = "<i class='ph-fill ph-moon'><i/>";
+      } else {
+        toggleThemeButton.innerHTML ="<i class='ph-fill ph-sun'><i/>";
+      }
+      }
+    </script>
+  </body>
+</html>

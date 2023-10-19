@@ -1,0 +1,32 @@
+<div class="container d-flex flex-column align-items-center flex-wrap">
+  <h1>carbon.css</h1>
+  <p>dark and white CSS library</p>
+  <a href="/docs/v1/install">Documentation <mark>version 1</mark></a>
+</div>
+<div
+  class="d-flex flex-row flex-wrap justify-between align-items-center container"
+>
+  <code>
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+    href=&quot;https://carboncss.pages.dev/api/v1/carbon.min.css&quot;&gt;
+  </code>
+  <button
+    class="btn square active"
+    id="copyLinkImport"
+    onclick="copyLinkImport()"
+  >
+    <i class="ph ph-clipboard"></i>
+  </button>
+</div>
+<script>
+  copyLinkImport = () => {
+    const linkElement = document.querySelector('#copyLinkImport');
+    navigator.clipboard.writeText('<link rel="stylesheet" type="text/css" href="https://carboncss.pages.dev/api/v1/carbon.min.css">')
+    document.getElementById("copyLinkImport").innerHTML =
+      "<i class='ph ph-check'></i>";
+    setTimeout(() => {
+      document.getElementById("copyLinkImport").innerHTML =
+        "<i class='ph ph-clipboard'><i/>";
+    }, 2000);
+  };
+</script>
