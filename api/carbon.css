@@ -172,30 +172,27 @@ a.btn.active, button.btn.active {
 .d-flex {
     display: flex !important;
     flex-direction: var(--flex-direction-default) !important;
+    gap: 6px !important;
 }
 
 .d-flex.flex-row {
     --flex-direction-default: row !important;
     margin-block: 6px !important;
-    gap: var(--margin-padding-default);
 }
 
 .d-flex.flex-row-reverse {
     --flex-direction-default: row-reverse !important;
     margin-block: 6px !important;
-    gap: var(--margin-padding-default);
 }
 
 .d-flex.flex-column {
     --flex-direction-default: column !important;
     margin-block: 6px !important;
-    gap: var(--margin-padding-default);
 }
 
 .d-flex.flex-column-reverse {
     --flex-direction-default: column-reverse !important;
     margin-block: 6px !important;
-    gap: var(--margin-padding-default);
 }
 
 .d-flex.flex-wrap {
