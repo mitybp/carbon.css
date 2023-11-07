@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="mb px">Documentation</h1>
+  <ul class="list-group">
+    <li><a href="https://carboncss.pages.dev/#/docs/container">Container</a></li>
+    <li><a href="https://carboncss.pages.dev/#/docs/flex-container">Flex container</a></li>
+    <li><a href="https://carboncss.pages.dev/#/docs/buttons">Buttons</a></li>
+    <li><a href="https://carboncss.pages.dev/#/docs/paddings-margins">Paddings and Margins</a></li>
+  </ul>
+</div>
+<div
+  class="container d-flex flex-row flex-wrap justify-between align-items-center"
+>
+  <code>
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+    href=&quot;https://carboncss.pages.dev/api/v1/carbon.min.css&quot;&gt;
+  </code>
+  <button
+    class="btn square active"
+    id="copyLinkImport"
+    onclick="copyLinkImport()"
+  >
+    <i class="ph ph-clipboard"></i>
+  </button>
+</div>
+
+<script>
+  copyLinkImport = () => {
+    const linkElement = document.querySelector("#copyLinkImport");
+    navigator.clipboard.writeText(
+      '<link rel="stylesheet" type="text/css" href="https://carboncss.pages.dev/api/v1/carbon.min.css">'
+    );
+    document.getElementById("copyLinkImport").innerHTML =
+      "<i class='ph ph-check'></i>";
+    setTimeout(() => {
+      document.getElementById("copyLinkImport").innerHTML =
+        "<i class='ph ph-clipboard'><i/>";
+    }, 2000);
+  };
+</script>

@@ -252,9 +252,10 @@ code {
     font-size: smaller;
     color: var(--hover-default) !important;
     background-color: var(--border-default) !important;
-    padding: 12px !important;
+    padding: 2px 4px !important;
     border-radius: 4px !important;
-    overflow: overlay;
+    overflow: overlay !important;
+    margin: 10px 0 !important;
 }
 
 mark{
@@ -267,17 +268,21 @@ mark{
 hr{
     border: 1px solid var(--link-default) !important;
     border-radius: 2px !important;
+    margin-block: var(--margin-padding-default) !important;
 }
 
 ul.list-group, ol.list-group{
     list-style-type: none !important;
-    padding: 6px;
-    border-radius: 6px;
-    background-color: var(--border-default) !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--border-default) !important;
     max-width: 300px !important;
     margin: 6px !important;
 }
-:where(ul.list-group, ol.list-group) li{
+ul.list-group li, ol.list-group li{
     padding: 4px !important;
-    padding-left: 10px !important;
+    padding: 6px 10px !important;
+    border-bottom: 1px solid var(--border-default) !important;
+}
+ul.list-group li:last-child, ol.list-group li:last-child{
+    border-bottom: none !important;
 }
