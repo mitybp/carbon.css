@@ -6,15 +6,14 @@
     <title>carbon.css - black and white CSS library</title>
     <script src="./planifolia.min.js"></script>
     <link rel="stylesheet" href="https://carboncss.pages.dev/api/carbon.min.css" />
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://carboncss.pages.dev/favicon.png" type="image/x-icon" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="toggleTheme()">
     <header class="d-flex flex-row mx align-items-center justify-between">
       <a href="https://carboncss.pages.dev/#/"><small>carbon.css</small></a>
       <div class="d-flex flex-row">
-        <a href="https://carboncss.pages.dev/#/docs/v1" class="btn">Docs</a>
+        <a href="https://carboncss.pages.dev/#/docs/" class="btn">Docs</a>
         <button
           onclick="document.body.classList.toggle('light'); toggleTheme()"
           class="btn square"
@@ -31,7 +30,9 @@
     <main></main>
     <footer class="d-flex flex-column align-items-center justify-center py mb">
       <p>Made with ❤️ in Brazil.</p>
-      <a href="https://github.com/mitybp/carbon.css">GitHub repository</a>
+      <a href="https://github.com/mitybp/carbon.css" target="_blank"
+        >GitHub repository</a
+      >
     </footer>
     <script>
       window.PlanifoliaSettings.container = document.querySelector("main");

@@ -5,9 +5,9 @@
 
 :root {
     --black-default: #000;
-    --dark-default: #111;
+    --dark-default: #171717;
     --white-default: #fff;
-    --light-default: #f0f0f0;
+    --light-default: #e4e4e4;
     --link-default: #5011ff;
     --link-hover-default: #3c15d7;
     --background-default: var(--black-default);
@@ -33,24 +33,24 @@ body {
 body.light {
     --background-default: var(--white-default) !important;
     --text-default: var(--black-default) !important;
-    --border-default: var(--light-default);
-    --hover-default: var(--dark-default);
+    --border-default: var(--light-default) !important;
+    --hover-default: var(--dark-default) !important;
 }
 
 body.dark {
     --background-default: var(--black-default) !important;
     --text-default: var(--white-default) !important;
-    --border-default: var(--dark-default);
-    --hover-default: var(--light-default);
+    --border-default: var(--dark-default) !important;
+    --hover-default: var(--light-default) !important;
 }
 
 a {
-    text-decoration: 1.5px underline var(--link-default);
+    text-decoration: 1.5px underline var(--link-default) !important;
     transition: 0.1s !important;
     color: var(--text-default) !important;
 
     &:hover {
-        text-decoration-color: var(--link-hover-default);
+        text-decoration-color: var(--link-hover-default) !important;
     }
 }
 
@@ -63,10 +63,11 @@ button {
 }
 
 a.btn, button.btn {
-    border: 1px solid var(--border-default) !important;
+    border: 1.5px solid var(--border-default) !important;
     padding: 4px 16px !important;
     border-radius: 4px !important;
     height: 35px !important;
+    width: auto !important;
     background-color: transparent !important;
     text-decoration: none !important;
     font-size: medium !important;
@@ -86,8 +87,8 @@ a.btn, button.btn {
     }
 }
 
-a.active, button.active {
-    border: 1px solid var(--text-default) !important;
+a.btn.active, button.btn.active {
+    border: 1.5px solid var(--text-default) !important;
     background-color: var(--text-default) !important;
     color: var(--background-default) !important;
     transition: 0.1s !important;
@@ -165,7 +166,7 @@ a.active, button.active {
     margin: var(--margin-padding-default) !important;
     padding: var(--margin-padding-default) !important;
     border-radius: var(--margin-padding-default) !important;
-    border: 1px solid var(--border-default) !important;
+    border: 1.5px solid var(--border-default) !important;
 }
 
 .d-flex {
@@ -266,7 +267,7 @@ mark{
 }
 
 hr{
-    border: 1px solid var(--link-default) !important;
+    border: 1.5px solid var(--link-default) !important;
     border-radius: 2px !important;
     margin-block: var(--margin-padding-default) !important;
 }
@@ -274,7 +275,7 @@ hr{
 ul.list-group, ol.list-group{
     list-style-type: none !important;
     border-radius: 6px !important;
-    border: 1px solid var(--border-default) !important;
+    border: 1.5px solid var(--border-default) !important;
     max-width: 300px !important;
     margin: 6px !important;
 }
