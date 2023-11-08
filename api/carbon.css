@@ -7,11 +7,13 @@
     --black-default: #000;
     --dark-default: #171717;
     --white-default: #fff;
-    --light-default: #e4e4e4;
+    --light-default: #f0f0f0;
     --link-default: #5011ff;
     --link-hover-default: #3c15d7;
-    --danger-default: #ff3838;
+    --danger-default: #ff5656;
     --success-default: #59ff88;
+    --danger-hover-default: #ff6767;
+    --success-hover-default: #72ff9a;
     --background-default: var(--black-default);
     --text-default: var(--white-default);
     --border-default: var(--dark-default);
@@ -48,7 +50,7 @@ body.dark {
 
 a {
     text-decoration: 1.5px underline var(--link-default) !important;
-    transition: 0.1s !important;
+    transition: 0.2s !important;
     color: var(--text-default) !important;
 
     &:hover {
@@ -61,7 +63,8 @@ a.btn, a.btn.active {
 }
 
 button {
-    height: 35px !important;
+    min-height: 35px !important;
+    height: auto !important;
 }
 
 a.btn, button.btn {
@@ -75,7 +78,7 @@ a.btn, button.btn {
     font-size: medium !important;
     cursor: pointer !important;
     color: var(--text-default) !important;
-    transition: 0.1s !important;
+    transition: 0.2s !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -84,15 +87,25 @@ a.btn, button.btn {
         width: 35px !important;
     }
     &.danger {
+        background-color: transparent !important;
+        color: var(--text-default) !important;
         border-color: var(--danger-default) !important;
-        color: var(--danger-default) !important;
+        &:hover{
+            background-color: var(--danger-default) !important;
+            color: var(--background-default) !important;
+        }
     }
     &.success {
+        background-color: transparent !important;
+        color: var(--text-default) !important;
         border-color: var(--success-default) !important;
-        color: var(--success-default) !important;
+        &:hover{
+            background-color: var(--success-default) !important;
+            color: var(--background-default) !important;
+        }
     }
 
-    &:hover {
+    &:not(&.danger, &.success):hover {
         background-color: var(--border-default) !important;
     }
 }
@@ -101,19 +114,32 @@ a.btn.active, button.btn.active {
     border: 1.5px solid var(--text-default) !important;
     background-color: var(--text-default) !important;
     color: var(--background-default) !important;
-    transition: 0.1s !important;
+    transition: 0.2s !important;
     text-decoration: none !important;
     
     &.danger {
-        background-color: var(--danger-default) !important;
-        color: var(--text-default) !important;
+        color: var(--background-default) !important;
         border-color: var(--danger-default) !important;
+        background-color: var(--danger-default) !important;
+        &.square{
+            width: 35px !important;
+        }
+        &:hover{
+            background-color: var(--danger-hover-default) !important;
+        }
     }
     &.success {
-        background-color: var(--success-default) !important;
+        color: var(--background-default) !important;
         border-color: var(--success-default) !important;
+        background-color: var(--success-default) !important;
+        &.square{
+            width: 35px !important;
+        }
+        &:hover{
+            background-color: var(--success-hover-default) !important;
+        }
     }
-    &:hover {
+    &:not(&.danger, &.success):hover {
         background-color: var(--hover-default) !important;
         border-color: var(--hover-default) !important;
     }
@@ -185,7 +211,7 @@ a.btn.active, button.btn.active {
     margin: var(--margin-padding-default) !important;
     padding: var(--margin-padding-default) !important;
     border-radius: var(--margin-padding-default) !important;
-    border: 1.5px solid var(--border-default) !important;
+    border: 2px solid var(--border-default) !important;
 }
 
 .d-flex {
