@@ -10,6 +10,7 @@
     --light-default: #e4e4e4;
     --link-default: #5011ff;
     --link-hover-default: #3c15d7;
+    --danger-default: #ff3838;
     --background-default: var(--black-default);
     --text-default: var(--white-default);
     --border-default: var(--dark-default);
@@ -81,6 +82,10 @@ a.btn, button.btn {
     &.square {
         width: 35px !important;
     }
+    &.danger {
+        border-color: var(--danger-default) !important;
+        color: var(--danger-default) !important;
+    }
 
     &:hover {
         background-color: var(--border-default) !important;
@@ -93,7 +98,10 @@ a.btn.active, button.btn.active {
     color: var(--background-default) !important;
     transition: 0.1s !important;
     text-decoration: none !important;
-
+    
+    &.danger {
+        background-color: var(--danger-default) !important;
+    }
     &:hover {
         background-color: var(--hover-default) !important;
         border-color: var(--hover-default) !important;
