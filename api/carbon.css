@@ -101,6 +101,8 @@ a.btn.active, button.btn.active {
     
     &.danger {
         background-color: var(--danger-default) !important;
+        color: var(--text-default) !important;
+        border-color: var(--danger-default) !important;
     }
     &:hover {
         background-color: var(--hover-default) !important;
