@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carbon.css - black and white CSS library</title>
+    <link rel="stylesheet" href="../../api/carbon.css" />
+    <link
+      rel="shortcut icon"
+      href="https://carboncss.pages.dev/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body onload="toggleTheme()">
+    <header class="d-flex flex-row mx align-items-center justify-between">
+      <a href="../../"><small>carbon.css</small></a>
+      <div class="d-flex flex-row">
+        <a href="../../docs" class="btn">Docs</a>
+        <button
+          onclick="document.body.classList.toggle('light'); toggleTheme()"
+          class="btn square"
+          id="toggleThemeButton"
+        ></button>
+        <a
+          href="https://github.com/mitybp/carbon.css"
+          target="_blank"
+          class="btn square active"
+          ><i class="ph-fill ph-github-logo"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <a class="px" href="../">Docs</a>
+      <h1 class="mb px">Container</h1>
+      <code> &lt;element class=&quot;container&quot;&gt;&lt;/element&gt; </code>
+      <p class="my">Adds <mark>container</mark> property to element.</p>
+    </div>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>

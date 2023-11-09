@@ -68,7 +68,7 @@ button {
 }
 
 a.btn, button.btn {
-    border: 1.5px solid var(--border-default) !important;
+    border: 2px solid var(--border-default) !important;
     padding: 4px 16px !important;
     border-radius: 4px !important;
     height: 35px !important;
@@ -111,7 +111,7 @@ a.btn, button.btn {
 }
 
 a.btn.active, button.btn.active {
-    border: 1.5px solid var(--text-default) !important;
+    border: 2px solid var(--text-default) !important;
     background-color: var(--text-default) !important;
     color: var(--background-default) !important;
     transition: 0.2s !important;
@@ -125,6 +125,7 @@ a.btn.active, button.btn.active {
             width: 35px !important;
         }
         &:hover{
+            border-color: var(--danger-hover-default) !important;
             background-color: var(--danger-hover-default) !important;
         }
     }
@@ -136,6 +137,7 @@ a.btn.active, button.btn.active {
             width: 35px !important;
         }
         &:hover{
+            border-color: var(--success-hover-default) !important;
             background-color: var(--success-hover-default) !important;
         }
     }
@@ -309,7 +311,7 @@ mark{
 }
 
 hr{
-    border: 1.5px solid var(--link-default) !important;
+    border: 2px solid var(--link-default) !important;
     border-radius: 2px !important;
     margin-block: var(--margin-padding-default) !important;
 }
@@ -317,14 +319,14 @@ hr{
 ul.list-group, ol.list-group{
     list-style-type: none !important;
     border-radius: 6px !important;
-    border: 1.5px solid var(--border-default) !important;
+    border: 2px solid var(--border-default) !important;
     max-width: 300px !important;
     margin: 6px !important;
 }
 ul.list-group li, ol.list-group li{
     padding: 4px !important;
     padding: 6px 10px !important;
-    border-bottom: 1px solid var(--border-default) !important;
+    border-bottom: 2px solid var(--border-default) !important;
 }
 ul.list-group li:last-child, ol.list-group li:last-child{
     border-bottom: none !important;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>carbon.css - black and white CSS library</title>
-    <link rel="stylesheet" href="./api/carbon.css" />
+    <link rel="stylesheet" href="../api/carbon.css" />
     <link
       rel="shortcut icon"
       href="https://carboncss.pages.dev/favicon.png"
@@ -14,9 +14,9 @@
   </head>
   <body onload="toggleTheme()">
     <header class="d-flex flex-row mx align-items-center justify-between">
-      <a href="./"><small>carbon.css</small></a>
+      <a href="../"><small>carbon.css</small></a>
       <div class="d-flex flex-row">
-        <a href="./docs" class="btn">Docs</a>
+        <a href="../docs" class="btn">Docs</a>
         <button
           onclick="document.body.classList.toggle('light'); toggleTheme()"
           class="btn square"
@@ -30,12 +30,26 @@
         ></a>
       </div>
     </header>
-    <div class="container d-flex flex-column align-items-center flex-wrap">
-      <h1>carbon.css</h1>
-      <p>black and white CSS library</p>
-      <a href="./docs">Read the documentation</a>
-    </div>
-    <div
+    <div class="container">
+        <h1 class="mb px">Documentation</h1>
+        <ul class="list-group">
+          <li>
+            <a href="./container">Container</a>
+          </li>
+          <li>
+            <a href="./flex-container"
+              >Flex container</a
+            >
+          </li>
+          <li><a href="./button">Button</a></li>
+          <li>
+            <a href="./padding-margin"
+              >Padding and Margin</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
         class="container d-flex flex-column"
       >
         <div>
@@ -56,6 +70,7 @@
           </button>
         </div>
       </div>
-    <script src="./script.js"></script>
+      
+      <script src="../script.js"></script>
   </body>
 </html>
