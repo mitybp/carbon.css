@@ -12,16 +12,11 @@
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body onload="toggleTheme()">
+  <body>
     <header class="d-flex flex-row mx align-items-center justify-between">
       <a href="../../"><small>carbon.css</small></a>
       <div class="d-flex flex-row">
         <a href="../../docs" class="btn">Docs</a>
-        <button
-          onclick="document.body.classList.toggle('light'); toggleTheme()"
-          class="btn square"
-          id="toggleThemeButton"
-        ></button>
         <a
           href="https://github.com/mitybp/carbon.css"
           target="_blank"
@@ -40,9 +35,7 @@
       <code> &lt;a class=&quot;btn&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap lign-items-center justify-evenly">
         <button class="btn">Default button</button>
-        <a href="./button" class="btn"
-          >Default link button</a
-        >
+        <a href="./button" class="btn">Default link button</a>
       </div>
       <p class="my">
         Adds <mark>button</mark> property to link or button element.
@@ -55,9 +48,7 @@
       <code> &lt;a class=&quot;btn active&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn active">Active button</button>
-        <a href="./button" class="btn active"
-          >Active link button</a
-        >
+        <a href="./button" class="btn active">Active link button</a>
       </div>
       <p class="my">Sets the buttons to actives.</p>
       <br />
@@ -68,9 +59,7 @@
       <code> &lt;a class=&quot;btn danger&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn danger">Danger button</button>
-        <a href="./button" class="btn danger"
-          >Danger link button</a
-        >
+        <a href="./button" class="btn danger">Danger link button</a>
       </div>
       <p class="my">Sets the buttons to danger.</p>
       <br />
@@ -82,9 +71,7 @@
       <code> &lt;a class=&quot;btn danger active&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn danger active">Active danger button</button>
-        <a
-          href="./button"
-          class="btn danger active"
+        <a href="./button" class="btn danger active"
           >Active danger link button</a
         >
       </div>
@@ -97,9 +84,7 @@
       <code> &lt;a class=&quot;btn success&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn success">Success button</button>
-        <a href="./button" class="btn success"
-          >Success link button</a
-        >
+        <a href="./button" class="btn success">Success link button</a>
       </div>
       <p class="my">Sets the buttons to success.</p>
       <br />
@@ -112,9 +97,7 @@
       <code> &lt;a class=&quot;btn success active&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn success active">Active success button</button>
-        <a
-          href="./button"
-          class="btn success active"
+        <a href="./button" class="btn success active"
           >Active success link button</a
         >
       </div>
@@ -127,9 +110,7 @@
       <code> &lt;a class=&quot;btn square&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square">☀️</button>
-        <a href="./button" class="btn square"
-          >✨</a
-        >
+        <a href="./button" class="btn square">✨</a>
       </div>
       <p class="my">Makes the buttons square.</p>
       <br />
@@ -141,11 +122,7 @@
       <code> &lt;a class=&quot;btn square active&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square active">☀️</button>
-        <a
-          href="./button"
-          class="btn square active"
-          >✨</a
-        >
+        <a href="./button" class="btn square active">✨</a>
       </div>
       <p class="my">Set the square buttons to actives.</p>
       <br />
@@ -157,11 +134,7 @@
       <code> &lt;a class=&quot;btn square danger&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square danger">☀️</button>
-        <a
-          href="./button"
-          class="btn square danger"
-          >✨</a
-        >
+        <a href="./button" class="btn square danger">✨</a>
       </div>
       <p class="my">Set the square buttons to danger.</p>
       <br />
@@ -173,11 +146,7 @@
       <code> &lt;a class=&quot;btn square success&quot;&gt;&lt;/a&gt; </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square success">☀️</button>
-        <a
-          href="./button"
-          class="btn square success"
-          >✨</a
-        >
+        <a href="./button" class="btn square success">✨</a>
       </div>
       <p class="my">Set the square buttons to success.</p>
       <br />
@@ -191,11 +160,7 @@
       </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square danger active">☀️</button>
-        <a
-          href="./button"
-          class="btn square danger active"
-          >✨</a
-        >
+        <a href="./button" class="btn square danger active">✨</a>
       </div>
       <p class="my">Set the danger square buttons to active.</p>
       <br />
@@ -210,11 +175,7 @@
       </code>
       <div class="container d-flex flex-wrap align-items-center justify-evenly">
         <button class="btn square success active">☀️</button>
-        <a
-          href="./button"
-          class="btn square success active"
-          >✨</a
-        >
+        <a href="./button" class="btn square success active">✨</a>
       </div>
       <p class="my">Set the success square buttons to active.</p>
       <br />

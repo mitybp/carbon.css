@@ -14,6 +14,7 @@
     --success-default: #59ff88;
     --danger-hover-default: #ff6767;
     --success-hover-default: #72ff9a;
+    --primary-default: #1e90ff;
     --background-default: var(--black-default);
     --text-default: var(--white-default);
     --border-default: var(--dark-default);
@@ -330,4 +331,47 @@ ul.list-group li, ol.list-group li{
 }
 ul.list-group li:last-child, ol.list-group li:last-child{
     border-bottom: none !important;
+}
+
+
+input, textarea{
+    padding: var(--margin-padding-default) !important;
+    background-color: var(--background-default) !important;
+    color: var(--text-default) !important;
+    border: 2px solid var(--link-default) !important;
+    border-radius: 4px !important;
+    outline: none !important;
+    transition: 0.2s !important;
+    height: auto !important;
+
+    &:focus{
+        border-color: var(--link-hover-default) !important;
+    }
+}
+input{
+    min-height: 35px !important;
+    min-width: 35px !important;
+}
+textarea{
+    min-width: 50px !important;
+    min-height: 105px !important;
+}
+
+input[type="checkbox"]{
+    width: 25px !important;
+    min-width: 25px !important;
+    height: 25px !important;
+    min-height: 25px !important;
+    border: 2px solid var(--border-default) !important;
+    cursor: pointer;
+    &:checked{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E") !important;
+        background-position: center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+    &:disabled{
+        opacity: 0.9 !important;
+        cursor: auto;
+    }
 }

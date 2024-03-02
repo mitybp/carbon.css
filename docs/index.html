@@ -12,16 +12,11 @@
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body onload="toggleTheme()">
+  <body>
     <header class="d-flex flex-row mx align-items-center justify-between">
       <a href="../"><small>carbon.css</small></a>
       <div class="d-flex flex-row">
         <a href="../docs" class="btn">Docs</a>
-        <button
-          onclick="document.body.classList.toggle('light'); toggleTheme()"
-          class="btn square"
-          id="toggleThemeButton"
-        ></button>
         <a
           href="https://github.com/mitybp/carbon.css"
           target="_blank"
@@ -31,46 +26,43 @@
       </div>
     </header>
     <div class="container">
-        <h1 class="mb px">Documentation</h1>
-        <ul class="list-group">
-          <li>
-            <a href="./container">Container</a>
-          </li>
-          <li>
-            <a href="./flex-container"
-              >Flex container</a
-            >
-          </li>
-          <li><a href="./button">Button</a></li>
-          <li>
-            <a href="./padding-margin"
-              >Padding and Margin</a
-            >
-          </li>
-        </ul>
+      <h1 class="mb px">Documentation</h1>
+      <ul class="list-group">
+        <li>
+          <a href="./container">Container</a>
+        </li>
+        <li>
+          <a href="./flex-container">Flex container</a>
+        </li>
+        <li><a href="./button">Button</a></li>
+        <li>
+          <a href="./padding-margin">Padding and Margin</a>
+        </li>
+        <li><a href="./input">Input</a></li>
+      </ul>
+    </div>
+    <div class="container d-flex flex-column">
+      <div>
+        <h2>Install</h2>
+        <p>
+          Copy the code and paste inside the <mark>&lt;head/&gt;</mark> tag.
+        </p>
       </div>
-      <div
-        class="container d-flex flex-column"
-      >
-        <div>
-          <h2>Install</h2>
-          <p>Copy the code and paste inside the <mark>&lt;head/&gt;</mark> tag.</p>
-        </div>
-        <div class="d-flex flex-row justify-between align-items-center">
-          <code>
-            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;<br>
-            href=&quot;https://carboncss.pages.dev/api/carbon.min.css&quot;&gt;
-          </code>
-          <button
-            class="btn square active"
-            id="copyLinkImport"
-            onclick="copyLinkImport()"
-          >
-            <i class="ph ph-clipboard"></i>
-          </button>
-        </div>
+      <div class="d-flex flex-row justify-between align-items-center">
+        <code>
+          &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;<br />
+          href=&quot;https://carboncss.pages.dev/api/carbon.min.css&quot;&gt;
+        </code>
+        <button
+          class="btn square active"
+          id="copyLinkImport"
+          onclick="copyLinkImport()"
+        >
+          <i class="ph ph-clipboard"></i>
+        </button>
       </div>
-      
-      <script src="../script.js"></script>
+    </div>
+
+    <script src="../script.js"></script>
   </body>
 </html>
