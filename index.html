@@ -1,56 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>carbon.css - black and white CSS library</title>
-    <link rel="stylesheet" href="./api/carbon.css" />
-    <link
-      rel="shortcut icon"
-      href="https://carboncss.pages.dev/favicon.png"
-      type="image/x-icon"
-    />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  </head>
-  <body>
-    <header class="d-flex flex-row mx align-items-center justify-between">
-      <a href="./"><small>carbon.css</small></a>
-      <div class="d-flex flex-row">
-        <a href="./docs" class="btn">Docs</a>
-        <a
-          href="https://github.com/mitybp/carbon.css"
-          target="_blank"
-          class="btn square active"
-          ><i class="ph-fill ph-github-logo"></i
-        ></a>
-      </div>
-    </header>
-    <div class="container d-flex flex-column align-items-center flex-wrap">
-      <h1>carbon.css</h1>
-      <p>black and white CSS library</p>
-      <a href="./docs">Read the documentation</a>
-    </div>
-    <div
-        class="container d-flex flex-column"
-      >
-        <div>
-          <h2>Install</h2>
-          <p>Copy the code and paste inside the <mark>&lt;head/&gt;</mark> tag.</p>
-        </div>
-        <div class="d-flex flex-row justify-between align-items-center">
-          <code>
-            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;<br>
-            href=&quot;https://carboncss.pages.dev/api/carbon.min.css&quot;&gt;
-          </code>
-          <button
-            class="btn square active"
-            id="copyLinkImport"
-            onclick="copyLinkImport()"
-          >
-            <i class="ph ph-clipboard"></i>
-          </button>
-        </div>
-      </div>
-    <script src="./script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carbon.css</title>
+    <script src="/planifolia.min.js"></script>
+</head>
+<body>
+    <main></main>
+    <script>
+        window.PlanifoliaSettings.container = document.querySelector("main");
+        window.PlanifoliaSettings.basePath = "/pages/";
+    
+        Planifolia.initializeAutoRouter();
+    </script>
+</body>
 </html>
